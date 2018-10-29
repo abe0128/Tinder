@@ -11,12 +11,13 @@
 		34D0D7E95A2E02B1E14DCB19 /* Pods_TinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C49625B3EE87F1B4DDA92E0 /* Pods_TinderTests.framework */; };
 		89A1B2DC8A863B513EE16759 /* Pods_Tinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FAF42F908ADDB5A5A20CD3 /* Pods_Tinder.framework */; };
 		A7F5060121879FA600F31A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5060021879FA600F31A1E /* AppDelegate.swift */; };
-		A7F5060321879FA600F31A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5060221879FA600F31A1E /* ViewController.swift */; };
 		A7F5060621879FA600F31A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F5060421879FA600F31A1E /* Main.storyboard */; };
 		A7F5060821879FA700F31A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F5060721879FA700F31A1E /* Assets.xcassets */; };
 		A7F5060B21879FA700F31A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F5060921879FA700F31A1E /* LaunchScreen.storyboard */; };
 		A7F5061621879FA700F31A1E /* TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5061521879FA700F31A1E /* TinderTests.swift */; };
 		A7F5062121879FA800F31A1E /* TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5062021879FA800F31A1E /* TinderUITests.swift */; };
+		A7F5062F2187A7E700F31A1E /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F5062E2187A7E700F31A1E /* CardsViewController.swift */; };
+		A7F506312187B94C00F31A1E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F506302187B94C00F31A1E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		7DE383B31B6A5ABFCCECCBDD /* Pods-Tinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder/Pods-Tinder.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F505FD21879FA600F31A1E /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F5060021879FA600F31A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7F5060221879FA600F31A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7F5060521879FA600F31A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F5060721879FA700F31A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F5060A21879FA700F31A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		A7F5061C21879FA700F31A1E /* TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F5062021879FA800F31A1E /* TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUITests.swift; sourceTree = "<group>"; };
 		A7F5062221879FA800F31A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F5062E2187A7E700F31A1E /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		A7F506302187B94C00F31A1E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D19435A1F92CD908D61DC535 /* Pods-TinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderUITests/Pods-TinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				A7F5060021879FA600F31A1E /* AppDelegate.swift */,
-				A7F5060221879FA600F31A1E /* ViewController.swift */,
+				A7F5062E2187A7E700F31A1E /* CardsViewController.swift */,
+				A7F506302187B94C00F31A1E /* ProfileViewController.swift */,
 				A7F5060421879FA600F31A1E /* Main.storyboard */,
 				A7F5060721879FA700F31A1E /* Assets.xcassets */,
 				A7F5060921879FA700F31A1E /* LaunchScreen.storyboard */,
@@ -368,8 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F5060321879FA600F31A1E /* ViewController.swift in Sources */,
+				A7F506312187B94C00F31A1E /* ProfileViewController.swift in Sources */,
 				A7F5060121879FA600F31A1E /* AppDelegate.swift in Sources */,
+				A7F5062F2187A7E700F31A1E /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
